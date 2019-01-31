@@ -1,0 +1,14 @@
+h1 {
+  text-align: center;
+  color: white;
+}
+
+body {
+  background-image: url(../Images/psychic-readings-2.jpg);
+  width: 100%;
+}
+
+h2,
+p {
+  color: white;
+}
