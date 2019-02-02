@@ -12,3 +12,8 @@ h2,
 p {
   color: white;
 }
+
+.container {
+  border: solid black;
+  padding: 10px;
+}

@@ -29,7 +29,7 @@ var letters = [
 
 var wins = 0;
 var lost = 0;
-var guesses = 10;
+var guesses = 9;
 
 var lettersGuessed = [];
 
@@ -50,10 +50,10 @@ document.onkeyup = function(event) {
 
   if (playerGuess === computerGuess) {
     wins++;
-    guesses = 10;
     document.getElementById("guesses").textContent = "Guesses: " + guesses;
     computerGuess = letters[Math.floor(Math.random() * letters.length)];
     document.getElementById("wins").textContent = "Wins: " + wins;
+    guesses = 9;
 
     lettersGuessed = [];
 
@@ -70,7 +70,7 @@ document.onkeyup = function(event) {
 
   if (guesses === 0) {
     lost++;
-    guesses = 10;
+    guesses = 9;
     document.getElementById("guesses").textContent = "Guesses: " + guesses;
     computerGuess = letters[Math.floor(Math.random() * letters.length)];
     document.getElementById("lost").textContent = "Lost: " + lost;
